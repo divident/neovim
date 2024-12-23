@@ -4,9 +4,9 @@ return {
   config = function()
     require("toggleterm").setup({
         size = 10,
-        open_mapping = [[<C-`>]],
+        open_mapping = [[<C-t>]],
         shading_factor = 2,
-        direction = "horizontal",
+        direction = "float",
         float_opts = {
             border = "curved",
             highlights = {
