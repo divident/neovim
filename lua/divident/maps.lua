@@ -1,8 +1,11 @@
 vim.g.mapleader = " "
 
 local function map(mode, lhs, rhs)
-  vim.keymap.set(mode, lhs, rhs, {silent = true})
+	vim.keymap.set(mode, lhs, rhs, { silent = true })
 end
+
+-- Custom
+map("n", "<leader>pv", vim.cmd.Ex)
 
 -- SAVE
 map("n", "<leader>w", "<CMD>update<CR>")
@@ -24,11 +27,8 @@ map("n", "<C-l>", "<C-w>l")
 map("n", "<C-k>", "<C-w>k")
 map("n", "<C-j>", "<C-w>j")
 
-
--- Resize Windows 
+-- Resize Windows
 map("n", "<S-Left>", "<C-w><")
 map("n", "<S-Right>", "<C-w>>")
 map("n", "<S-Up>", "<C-w>+")
 map("n", "<S-Down>", "<C-w>-")
-
-

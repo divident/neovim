@@ -8,6 +8,7 @@ return {
 	config = function()
 		local nvim_lsp = require("lspconfig")
 		local mason_lspconfig = require("mason-lspconfig")
+		-- elo
 
 		local protocol = require("vim.lsp.protocol")
 
